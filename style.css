@@ -1,0 +1,363 @@
+/*
+Theme Name: ZonaSismica
+Theme URI: --
+Version: 1.3
+Description: --
+Author: SISM
+Author URI: --
+Template: TheStyle
+*/
+
+@import url("../TheStyle/style.css");
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+/* Stili di Base */
+html { -webkit-font-smoothing: antialiased; }
+
+
+body {
+	color: #1D3464;
+	font-family: Trebuchet MS, Arial, Verdana, sans-serif;
+}
+
+.pubtime span,
+ul.nav a,
+h3.title,
+.wp-pagenavi,
+#featured h2.title,
+.taxonomy a,
+pubtime span,
+h2.title a,
+p.postinfo,
+h3.widgettitle,
+#tabbed-area li a,
+h3.infotitle,
+h1.title,
+.blog-title,
+.post-meta,
+h3#comments,
+span.fn,
+h3#reply-title span {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+	font-size: 14px;
+   line-height: 1.612;
+}
+
+h3 {
+    margin: 3% inherit;
+}
+
+h2 {
+   font-weight: bold;
+   color: black;
+   margin-top: 10px;
+   margin-bottom: 3px;
+}
+
+.widgetcontent,
+#sidebar h3.widgettitle,
+h2.title a,
+.post-text h1.title,
+.blog-title a,
+.info-panel h3.infotitle,
+#global-nav li.active a,
+#breadcrumbs,
+h6, h5, h4, h3, h2, h1{
+    color: #1D3464;
+}
+
+a,
+.widgetcontent a,
+#breadcrumbs a,
+#breadcrumbs span.raquo,
+ul.nav a:hover,
+ul.nav > li.current-menu-item > a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a
+{
+    color: #387BC9;
+}
+
+.entry,
+.post,
+#comment-wrap,
+#disqus_thread,
+#sidebar .widget,
+.info-panel .tags ul li a,
+.single-thumb {
+    border-radius: 2px;
+}
+
+#container {
+   background: #387BC8;
+   min-width: 1024px;
+}
+
+#container2 {
+   background: url(images/container-bg-right.png) top right repeat-y;
+}
+
+.multiplebgs #container2 {
+   background: url(images/sfondoZS.svg) no-repeat center fixed, url(images/container-bg-right.svg) 102% repeat-y;
+}
+
+#left-area {
+   margin-left: auto;
+   width: 69%;
+}
+
+
+/* Header */
+
+#logo {
+   margin: 2em 0px 5px 0px;
+}
+
+
+/* Menu */
+
+.nav li ul {
+ width: auto;
+ padding: 0 20px;
+ line-height: 1.5;
+}
+
+.cufon-disabled ul.nav a {
+   font-size: 28px;
+   font-variant: small-caps;
+   text-shadow: 1px 1px 0px black;
+   padding: 12px 8px 12px;
+}
+
+.nav ul , .nav > .sf-ul.sfHover > a {
+    background: #1D3464;
+}
+
+ul.nav ul li a {
+   background-image: none;
+   width: 100%;
+   padding: 0;
+}
+
+ul.nav ul li a:hover {
+    background: url(images/dropdown-bullet.png) no-repeat 0 -17px;
+}
+
+ul.nav ul li {
+    padding-top: 20px;
+}
+
+
+/* Posts */
+
+.post-data {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.post-data .pubtime {
+    background-color: transparent;
+    clear: both;
+    padding-right: 8px;
+}
+
+.post-data span {
+    font-size: 32px;
+    top: 60px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.taxonomy {
+    background-color: #387BC9;
+    display: inline-block;
+    float: right;
+    clear: both;
+    padding: 8px 8px 3px 8px;
+    margin-bottom: 3px;
+}
+
+.taxonomy a {
+    font-size: 22px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	text-align: right;
+}
+
+.taxonomy.diritti-umani-e-pace {
+	background-color: #608e30;
+}
+
+.taxonomy.pedagogia-medica {
+	background-color: white;
+}
+
+.taxonomy.pedagogia-medica a {
+	color: black;
+}
+
+.taxonomy.salute-pubblica {
+	background-color: #ef7831;
+}
+
+.taxonomy.salute-riproduttiva-e-aids {
+	background-color: #bd181e;
+}
+
+.taxonomy.scambi-di-ricerca {
+	background-color: #333e90;
+}
+
+.taxonomy.scambi-professionali {
+	background-color: #007dc0;
+}
+
+/* Post Images */
+
+.post-text a img {
+    background: white;
+    padding: 10px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	opacity: 0;
+}
+
+.post-text .wp-caption {
+    background: white;
+    padding: 5px 1px;
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+	opacity: 0;
+}
+
+.post-text .wp-caption a img {
+    padding: 0;
+    background: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.post-text .wp-caption p.wp-caption-text {
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.post-text a img {
+	border: 1px solid #DDD;
+}
+
+
+/* Breadcrumbs */
+
+#breadcrumbs {
+    margin: -40px 0px 16px;
+    font-size: 13px;
+    background: white;
+    position: absolute;
+    padding: 1px 2% 0px 3%;
+    border-radius: 2px 30px 0px 2px;
+    border: 1px solid white;
+    box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+    text-shadow: none;
+}
+
+#breadcrumbs .bread_separator {
+	border-right: solid 1px #888;
+	border-top: solid 1px #888;
+	height: 22px;
+	width: 24px;
+	display: inline-block;
+	margin: -2px 7px -7px -7px;
+	border-radius: 0px 30px 0px 0px;
+	box-shadow: 2px 1px 1px 0px rgba(0, 0, 0, 0.2);
+	position: relative;
+	top: -1px;
+}
+
+
+/* Search Form */
+#search-form {
+	background: rgba(0, 0, 0, 0.3);
+	width: 250px;
+	height: 24px;
+	margin: 44px 3% 0px 0px;
+	border: solid #236 1px;
+	border-radius: 27px;
+	position: relative;
+	top: 33px;
+}
+
+input#searchinput {
+	color: 	white;
+	top: 3px;
+}
+
+input#searchsubmit {
+	float: right;
+	margin-top: 6px;
+	margin-right: 9px;
+}
+
+
+/* Sidebar e Widgets */
+
+#sidebar .widget {
+    background-color: #fff;
+}
+
+#sidebar .widgetcontent,#sidebar h3.widgettitle {
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.sidebar-fixedwidth #sidebar {
+   width: 26%;
+}
+
+#content.sidebar-fixedwidth {
+   padding-right: 29%;
+}
+
+
+/* Commenti */
+
+#disqus_thread {
+   background: white url(images/entry-bottom-bg.png) repeat-x;
+   border: 1px solid white;
+   padding: 30px 4% 0px;
+   box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.6);
+   -moz-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+   -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+   margin-bottom: 15px;
+}
+
+
+/* Navigazione fra pagine */
+.wp-pagenavi span.current,
+.wp-pagenavi span.extend,
+.wp-pagenavi a:active,
+.wp-pagenavi a:hover {
+    color: #1D3464 !important;
+    text-shadow: 0px 0px 5px white, -0px -0px 5px white;
+}
